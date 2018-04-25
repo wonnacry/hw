@@ -45,6 +45,3 @@ def dec2boh(number,cc):
 			ans += str(number % cc)
 		number //= cc
 	return(ans[::-1])
-
-n = 'abcdef'
-print(hex2dec(n))

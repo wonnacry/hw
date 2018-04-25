@@ -37,5 +37,3 @@ def words(k):
 			u += (w[n][3])
 		u += ' '
 	return(u)
-
-print(counter())
