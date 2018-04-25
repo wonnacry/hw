@@ -1,21 +1,15 @@
 from datetime import datetime, date, time, timedelta
 def counter():
-	a = datetime.date(2007-9-1)
+	a = datetime.now()
 	c = a.replace(a.isocalendar()[0]+1, 1, 1, 00,00,00,00)
 	g = str(c - a).split()
-	g[2].replace(':','')
-	print(a,type(a))
-	print(c,type(c))
-	print(g)
-	print()
+	g[2] = g[2].split(':')
 	k = []
-	for i in g[0], g[2][0:2],g[2][3:5]:
+	for i in g[0], g[2][0],g[2][1]:
 		k.append(int(i))
 	return(words(k))
 
 def words(k):
-	print()
-	print('words')
 	u = ''
 	w = ({
 		1:'день',
@@ -42,7 +36,6 @@ def words(k):
 		else:
 			u += (w[n][3])
 		u += ' '
-	print(u)
 	return(u)
 
 print(counter())
