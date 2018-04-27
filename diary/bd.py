@@ -4,8 +4,8 @@ cursor = conn.cursor()
 sql = '''
 	CREATE TABLE IF NOT EXISTS my_diary (
 	id INTEGER PRIMARY KEY AUTOINCREMENT,
-	target TEXT NOT NULL DEFAULT 'Тут название задачи',
-	short_url INTEGER NOT NULL DEFAULT 0
+	target TEXT NOT NULL,
+	status_of_t INTEGER NOT NULL DEFAULT 0
 	)
 '''
 cursor.execute(sql)
