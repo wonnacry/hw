@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS my_diary (
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	task TEXT NOT NULL,
+	deadline TEXT,
+	status_of_t TEXT NOT NULL DEFAULT 'Not done'
+	)
