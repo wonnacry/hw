@@ -78,6 +78,6 @@ def calc(expr):
             stack.append(float(token))
     return stack.pop()
 
-
-a = "3 + 4 * 2 / (1 - 5) ^ 2"
-print(calc(a))
+if __name__ == '__main__':
+    expr = input()
+    print(calc(expr))
